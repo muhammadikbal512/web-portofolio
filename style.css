@@ -101,7 +101,7 @@ p {
   transition: color 0.3s ease-in-out;
 }
 
-.logo a:hover {
+.logo a:hover, .networks a:hover {
   color: var(--paragraph-text-color);
 }
 
@@ -152,6 +152,17 @@ p {
 
 .project .image img {
   width: 100%;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.image > img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.heading > span {
+  cursor: pointer;
 }
 
 /* ABOUT */
